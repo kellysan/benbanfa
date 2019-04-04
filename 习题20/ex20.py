@@ -9,27 +9,27 @@
 
 
 import  sys
-#from sys import  argv
-#argv 传入参数解包
+# from sys import  argv
+# argv 传入参数解包
 script, input_file = sys.argv
-#script, input_file = argv
+# script, input_file = argv
 
-#打印文件所有内容
+# 打印文件所有内容
 def print_all(f):
     print(f.read())
 
 
-#将文件游标重置
+# 将文件游标重置
 def rewind(f):
     f.seek(0)
 
 
-#读取文件每一行
+# 读取文件每一行
 def print_a_line(line_count, f):
     print(line_count, f.readline())
 
 
-#创建一个文件打开对象
+# 创建一个文件打开对象
 current_file = open(input_file)
 
 print("First let's print the whole file:\n")
